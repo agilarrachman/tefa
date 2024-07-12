@@ -1,0 +1,74 @@
+[
+    {
+        "nama":"Anggrek Prof. Dr. Arif Satria, SP, MSi",
+        "image":"Anggrek Prof. Dr. Arif Satria, SP, MSi.PNG",
+        "binomial_name":"Dendrobium Prof. Dr. Arif Satria, SP, MSi",
+        "kingdom":"Plantae",
+        "class":"Liliopsida",
+        "ordo":"Orchidales",
+        "family":"Orchidaceae",
+        "subfamily":"Dendrobium",
+        "genus":"Dendrobium",
+        "species":"Dendrobium Spatula"
+    },
+    {
+        "nama":"Anggrek IPB Vocational Collage",
+        "image":"Anggrek IPB Vocational Collage.png",
+        "binomial_name":"Dendrobium IPB Vocational Collage",
+        "kingdom":"Plantae",
+        "class":"Liliopsida",
+        "ordo":"Orchidales",
+        "family":"Orchidaceae",
+        "subfamily":"Dendrobium",
+        "genus":"Dendrobium",
+        "species":"Dendrobium IPB Vocational College"
+    },
+    {
+        "nama":"Anggrek Dr. Ir. Wawan Oktariza, M.SI",
+        "image":"Anggrek Wawan Oktariza.png",
+        "binomial_name":"Dendrobium Dr. Ir. Wawan Oktariza, M.SI",
+        "kingdom":"Plantae",
+        "class":"Liliopsida",
+        "ordo":"Orchidales",
+        "family":"Orchidaceae",
+        "subfamily":"Dendrobium",
+        "genus":"Dendrobium",
+        "species":"Dendrobium Spatula"
+    },
+    {
+        "nama":"Anggrek Neno Beuty",
+        "image":"Anggrek Neno Beuty.png",
+        "binomial_name":"Dendrobium Neno Beuty",
+        "kingdom":"Plantae",
+        "class":"Liliopsida",
+        "ordo":"Orchidales",
+        "family":"Orchidaceae",
+        "subfamily":"Dendrobium",
+        "genus":"Dendrobium",
+        "species":"Dendrobium Neno Beauty"
+    },
+    {
+        "nama":"Strawberry",
+        "image":"Strawberry.png",
+        "binomial_name":"Cucumis melo L.",
+        "kingdom":"Plantae",
+        "class":"Magnoliopsida",
+        "ordo":"Rosales",
+        "family":"Rosaceae",
+        "subfamily":"Rosoideae",
+        "genus":"Fragaria",
+        "species":"Fragaria x ananassa"
+    },
+    {
+        "nama":"Golden Melon",
+        "image":"Golden Melon.png",
+        "binomial_name":"Fragaria x ananassa",
+        "kingdom":"Plantae",
+        "class":"Magnoliopsida",
+        "ordo":"Cucurbitales",
+        "family":"Cucurbitaceae",
+        "subfamily":"Cucurbitoideae",
+        "genus":"Cucumis",
+        "species":"Cucumis melo"
+    }    
+]

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style_plant_desc.css" />
+    <link rel="stylesheet" href="css/animasi.css" />
+    <!-- Library AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Teaching Factory Sekolah Vokasi</title>
+    <!-- Javascript -->
+    <script type="text/javascript">
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          // Typical action to be performed when the document is ready:
+          var data = JSON.parse(xhttp.responseText);
+          data.forEach(function (element) {
+            if (element.nama === "Anggrek Neno Beuty") {
+              document.getElementById("roadmap").innerHTML += element.nama;
+              document.getElementById("klasifikasi").innerHTML +=
+                "<div class='header-plant'><h2>" +
+                element.nama +
+                "</h2><p>" +
+                element.binomial_name +
+                "</p></div><div class='image-classification'><div class='image animated-zoom' ><div class='image'><img src='asset/Our Plant/" +
+                element.image +
+                "' alt='" +
+                element.nama +
+                "'></div></div><div class='classification animated-hori'><div class='class'><li>Kingdom</li><li>Class</li><li>Ordo</li><li>Family</li><li>Subfamily</li><li>Genus</li><li>Species</li><li>Binomial Name</li></div><div class='titik-dua'><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li></div><div class='class-plant'><li>" +
+                element.kingdom +
+                "</li><li>" +
+                element.class +
+                "</li><li>" +
+                element.ordo +
+                "</li><li>" +
+                element.family +
+                "</li><li>" +
+                element.subfamily +
+                "</li><li>" +
+                element.genus +
+                "</li><li>" +
+                element.species +
+                "</li><li>" +
+                element.binomial_name +
+                "</li></div></div></div>";
+            }
+          });
+        }
+      };
+      xhttp.open("GET", "data.json", true);
+      xhttp.send();
+    </script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Nav Start -->
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="asset/logo nav.png" alt="" />
+          </a>
+          <div class="menu-wrapper">
+            <div class="menu">
+              <a href="index.html">Home</a>
+              <a href="our_plant.html" class="active">Our Plants</a>
+              <a href="trainingservice_Home.html">Training Services</a>
+              <a href="product_Home.html">Products</a>
+              <a href="aboutus.html">About Greenhouse</a>
+            </div>
+            <div class="button-search">
+              <div class="container">
+                <div class="teks">Search</div>
+                <div class="icon">
+                  <i class="bx bx-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-open bx bx-menu"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Nav End -->
+
+    <!-- Roadmap Start -->
+    <div class="roadmap">
+      <div class="container">
+        <div class="icons">
+          <a href="index.html"><i class="bx bx-home"></i></a>
+          <i class="bx bx-chevron-right"></i>
+          <a href="our_plant.html">Our Plants</a>
+          <i class="bx bx-chevron-right"></i>
+          <p id="roadmap"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Roadmap End -->
+
+    <!-- Plant Start -->
+
+    <div class="plant">
+      <div class="container">
+        <div class="header" id="klasifikasi"></div>
+        <div class="description">
+          <p>
+            Anggrek adalah tanaman berbunga yang termasuk dalam keluarga
+            Orchidaceae atau suku anggrek. Keluarga anggrek ini sangat besar dan
+            terdiri dari ribuan spesies yang tersebar di seluruh dunia.
+            Masing-masing spesies anggrek memiliki karakteristik yang unik dan
+            bervariasi.
+          </p>
+          <p>
+            Sekolah Vokasi IPB University bekerja sama dengan Nusantara Agri
+            Persada (Nusada Anggrek) dan DD Orchid Nursery mengembangkan tiga
+            jenis anggrek baru, salah satu nya adalah Dendrobium Neno Beauty,
+            hasil silangan dari Nindii dengan Wira Pride. anggrek ini dirakit
+            dari golongan Dendrobium Section Spatulata/Antelope Type yang
+            menggambarkan ciri khas anggrek Indonesia. Khususnya anggrek endemik
+            Papua. Masing-masing anggrek mengangkat warna utama yang berbeda
+            untuk menggambarkan keberagaman unsur Indonesia.
+          </p>
+        </div>
+        <div class="tanam-rawat">
+          <div class="card">
+            <div class="tanam" data-aos="fade-right">
+              <h3>Tata Cara Penanaman</h3>
+              <ol>
+                <li>
+                  Persiapan Media Tanam: Siapkan media tanam yang cocok untuk
+                  anggrek. Banyak anggrek tumbuh baik dalam campuran serat
+                  kelapa, potongan kulit pohon, atau campuran khusus anggrek
+                  yang tersedia di pasaran. Pastikan media tanam memiliki
+                  drainase yang baik untuk mencegah akar tergenang.
+                </li>
+                <li>
+                  Pilih Pot yang Tepat: Pilih pot yang sesuai untuk anggrek
+                  Anda. Pot harus memiliki lubang drainase di bagian bawah untuk
+                  mengalirkan kelebihan air. Pot yang transparan juga bisa
+                  membantu memantau kondisi akar.
+                </li>
+                <li>
+                  Siapkan Anggrek: Periksa akar anggrek dan pastikan mereka
+                  sehat. Potong akar yang rusak atau mati dengan sterilisasi
+                  alat yang bersih. Jika anggrek Anda memiliki akar udara,
+                  biarkan mereka tetap terjaga.
+                </li>
+                <li>
+                  Tanam Anggrek: Tempatkan sedikit media tanam di bagian bawah
+                  pot. Letakkan akar anggrek dengan hati-hati di atas media
+                  tanam dan perlahan-lahan tambahkan media tanam ke sekeliling
+                  akar hingga anggrek terpasang dengan baik. Pastikan tidak ada
+                  akar yang tertekan atau terjepit.
+                </li>
+                <li>
+                  Penyiraman Awal: Setelah menanam, berikan penyiraman ringan
+                  untuk memadatkan media tanam dan membantu anggrek menetap.
+                  Pastikan tidak ada air yang menggenang di bawah pot.
+                </li>
+                <li>
+                  Penempatan dan Perawatan: Letakkan anggrek di tempat yang
+                  cocok sesuai dengan persyaratan cahaya dan suhu yang
+                  diperlukan. Berikan perawatan lanjutan seperti pemangkasan
+                  bunga mati, pemupukan, dan pemantauan terhadap kondisi tanaman
+                  secara rutin.
+                </li>
+              </ol>
+            </div>
+            <div class="rawat" data-aos="fade-left">
+              <h3>Tata Cara Perawatan</h3>
+              <ol>
+                <li>
+                  Pencahayaan: Anggrek membutuhkan cahaya yang cukup, tetapi
+                  hindari sinar matahari langsung yang dapat membakar daun
+                  mereka. Tempatkan anggrek di dekat jendela yang mendapat sinar
+                  matahari terang namun disaring atau jauhkan dari sinar
+                  matahari langsung.
+                </li>
+                <li>
+                  Suhu: Anggrek tumbuh baik dalam suhu yang hangat, sekitar
+                  20-30 derajat Celsius pada siang hari, dan sedikit lebih
+                  dingin pada malam hari. Hindari perubahan suhu yang drastis
+                  dan jauhkan anggrek dari sumber panas atau pendingin udara
+                  yang berlebihan.
+                </li>
+                <li>
+                  Kelembaban: Anggrek membutuhkan kelembaban yang cukup tinggi.
+                  Anda dapat meningkatkan kelembaban dengan menyemprotkan air
+                  pada daun dan sekitar tanaman. Penggunaan pelembab udara atau
+                  penempatan anggrek di atas wadah berisi kerikil dengan sedikit
+                  air juga bisa membantu.
+                </li>
+                <li>
+                  Penyiraman: Penyiraman anggrek harus dilakukan dengan
+                  hati-hati. Pastikan akar terlihat agak kering sebelum menyiram
+                  kembali. Sebaiknya gunakan air yang bersih dan lepaskan air
+                  yang menggenang di bawah pot untuk mencegah akar tergenang.
+                </li>
+                <li>
+                  Media Tanam: Anggrek memerlukan media tanam yang baik
+                  drainasenya, seperti campuran serat kelapa, potongan kulit
+                  pohon, atau campuran khusus anggrek yang tersedia di pasaran.
+                  Ganti media tanam setiap 1-2 tahun untuk menjaga kualitasnya
+                </li>
+                <li>
+                  Pupuk: Beri pupuk khusus anggrek secara teratur untuk
+                  memberikan nutrisi yang cukup. Gunakan pupuk yang dirancang
+                  khusus untuk anggrek dan ikuti petunjuk penggunaan yang
+                  dianjurkan. Beri makan anggrek dengan frekuensi yang lebih
+                  jarang tetapi dengan dosis yang lebih tinggi daripada pupuk
+                  biasa.
+                </li>
+                <li>
+                  Perawatan Tambahan: Perhatikan pertumbuhan dan kondisi tanaman
+                  anggrek Anda. Pemangkasan bunga mati dan daun yang layu dapat
+                  membantu mendorong pertumbuhan yang lebih baik. Juga,
+                  perhatikan adanya tanda-tanda penyakit atau hama seperti daun
+                  kuning, bintik-bintik, atau serangga. Jika ada masalah,
+                  lakukan tindakan yang sesuai untuk mengatasi masalah tersebut.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <h3>Gallery</h3>
+          <div class="image">
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Anggrek Neno Beuty1.png"
+              alt="Anggrek Neno Beuty 1"
+            />
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Anggrek Neno Beuty2.png"
+              alt="Anggrek Neno Beuty 2"
+            />
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Anggrek Neno Beuty1.png"
+              alt="Anggrek Neno Beuty 2"
+            />
+          </div>
+        </div>
+        <div class="funfact">
+          <h3>Fun Fact</h3>
+          <div class="content">
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Anggrek FF.jpg"
+              alt="funfact"
+            />
+            <p data-aos="fade-right" data-aos-delay="150">
+              Sekolah Vokasi IPB University bekerja sama dengan Nusantara Agri
+              Persada (Nusada Anggrek) dan DD Orchid Nursery mengembangkan tiga
+              jenis anggrek baru Ketiga anggrek tersebut adalah Dendrobium Prof
+              Arif Satria, hasil silangan dari Gerardo Nandivardhana dengan
+              Heart of Northoaks Primary. Dendrobium Neno Beauty, hasil silangan
+              dari Nindii dengan Wira Pride dan Dendrobium IPB Vocational
+              College.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Plant End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row1">
+          <div class="content-left">
+            <img src="asset/logo footer.png" alt="Teaching Factory" />
+            <a href="#" class="email">karankteam@gmail.com</a>
+            <p class="phone">+6289627550979</p>
+            <div class="icons">
+              <a href="https://wa.me/6285710207095"
+                ><img src="asset/whatsapp.png" alt="whatsapp"
+              /></a>
+              <a href="https://instagram.com/precision.horticulture/"
+                ><img src="asset/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="content-right">
+            <div class="col1">
+              <h3>Services</h3>
+              <ul>
+                <li>House Plant</li>
+                <li>Garden Plant</li>
+                <li>Vase</li>
+                <li>Fertilizer</li>
+              </ul>
+            </div>
+            <div class="col2">
+              <h3>Information</h3>
+              <ul>
+                <li>Office Hours</li>
+                <li>Requirements</li>
+                <li>About us</li>
+              </ul>
+            </div>
+            <div class="col3">
+              <h3>Helpfull Link</h3>
+              <ul>
+                <li>Service</li>
+                <li>Support</li>
+                <li>Terms & Condition</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="col4">
+              <h3>Address</h3>
+              <div class="address">
+                <p>Jl. Lodaya II, RT.02/RW.05</p>
+                <p>Babakan, Kecamatan Bogor Tengah</p>
+                <p>Kota Bogor, Jawa Barat 16128</p>
+              </div>
+              <a href="https://maps.app.goo.gl/cEKGPUtJpySxAPzR8" class="maps"
+                >Google Maps</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy;Copyright 2023 All Right Reserve | Built by <span>KARANK</span>
+      </p>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

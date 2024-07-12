@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style_plant_desc.css" />
+    <link rel="stylesheet" href="css/animasi.css" />
+    <!-- Library AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Teaching Factory Sekolah Vokasi</title>
+    <!-- Javascript -->
+    <script type="text/javascript">
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          // Typical action to be performed when the document is ready:
+          var data = JSON.parse(xhttp.responseText);
+          data.forEach(function (element) {
+            if (element.nama === "Strawberry") {
+              document.getElementById("roadmap").innerHTML += element.nama;
+              document.getElementById("klasifikasi").innerHTML +=
+                "<div class='header-plant'><h2>" +
+                element.nama +
+                "</h2><p>" +
+                element.binomial_name +
+                "</p></div><div class='image-classification'><div class='image animated-zoom' ><div class='image'><img src='asset/Our Plant/" +
+                element.image +
+                "' alt='" +
+                element.nama +
+                "'></div></div><div class='classification animated-hori'><div class='class'><li>Kingdom</li><li>Class</li><li>Ordo</li><li>Family</li><li>Subfamily</li><li>Genus</li><li>Species</li><li>Binomial Name</li></div><div class='titik-dua'><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li><li>:</li></div><div class='class-plant'><li>" +
+                element.kingdom +
+                "</li><li>" +
+                element.class +
+                "</li><li>" +
+                element.ordo +
+                "</li><li>" +
+                element.family +
+                "</li><li>" +
+                element.subfamily +
+                "</li><li>" +
+                element.genus +
+                "</li><li>" +
+                element.species +
+                "</li><li>" +
+                element.binomial_name +
+                "</li></div></div></div>";
+            }
+          });
+        }
+      };
+      xhttp.open("GET", "data.json", true);
+      xhttp.send();
+    </script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+
+  </head>
+  <body>
+    <!-- Nav Start -->
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="asset/logo nav.png" alt="" />
+          </a>
+          <div class="menu-wrapper">
+            <div class="menu">
+              <a href="index.html">Home</a>
+              <a href="our_plant.html" class="active">Our Plants</a>
+              <a href="trainingservice_Home.html">Training Services</a>
+              <a href="product_Home.html">Products</a>
+              <a href="aboutus.html">About Greenhouse</a>
+            </div>
+            <div class="button-search">
+              <div class="container">
+                <div class="teks">Search</div>
+                <div class="icon">
+                  <i class="bx bx-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-open bx bx-menu"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Nav End -->
+
+    <!-- Roadmap Start -->
+    <div class="roadmap">
+      <div class="container">
+        <div class="icons">
+          <a href="index.html"><i class="bx bx-home"></i></a>
+          <i class="bx bx-chevron-right"></i>
+          <a href="our_plant.html">Our Plants</a>
+          <i class="bx bx-chevron-right"></i>
+          <p id="roadmap"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Roadmap End -->
+
+    <!-- Plant Start -->
+
+    <div class="plant">
+      <div class="container">
+        <div class="header" id="klasifikasi"></div>
+        <div class="description">
+          <p>
+            Buah strawberry adalah buah yang berasal dari tanaman berbunga dalam
+            genus Fragaria. Buah ini memiliki bentuk bulat kecil dengan
+            permukaan yang berbintik-bintik merah cerah. Strawberry memiliki
+            rasa manis yang segar dengan sedikit keasaman yang khas. Buah ini
+            sering digunakan dalam berbagai hidangan, mulai dari makanan penutup
+            seperti tart, pai, es krim, hingga jus segar.
+          </p>
+          <p>
+            Daging buah strawberry berwarna merah cerah dan teksturnya lembut
+            namun sedikit kenyal. Buah ini memiliki biji kecil yang
+            terdistribusi di permukaan buah. Aromanya yang harum dan cita
+            rasanya yang menyegarkan membuat strawberry menjadi salah satu buah
+            favorit bagi banyak orang.
+          </p>
+          <p>
+            Selain kelezatannya, strawberry juga dikenal karena kandungan
+            gizinya. Buah ini mengandung vitamin C, serat, dan antioksidan yang
+            baik untuk kesehatan tubuh. Strawberry juga mengandung senyawa
+            fitokimia seperti anthocyanin yang memberikan warna merah pada buah
+            dan dikaitkan dengan manfaat kesehatan seperti melindungi sel-sel
+            tubuh dari kerusakan akibat radikal bebas.
+          </p>
+          <p>
+            Strawberry biasanya dapat ditemukan di musim semi hingga musim
+            panas, dan tersedia dalam berbagai varietas yang memiliki perbedaan
+            dalam ukuran, rasa, dan keasaman. Buah ini sering dikonsumsi segar,
+            dimasak menjadi saus, atau digunakan sebagai hiasan dalam makanan
+            atau minuman.
+          </p>
+          <p>
+            Buah strawberry tidak hanya lezat dan menyegarkan, tetapi juga
+            memberikan manfaat kesehatan yang beragam. Namun, bagi individu
+            dengan alergi tertentu atau kondisi medis khusus, perlu
+            berkonsultasi dengan dokter sebelum mengonsumsinya secara
+            berlebihan.
+          </p>
+        </div>
+        <div class="tanam-rawat">
+          <div class="card">
+            <div class="tanam" data-aos="fade-right">
+              <h3>Tata Cara Penanaman</h3>
+              <ol>
+                <li>
+                  Pilih lokasi yang mendapatkan paparan sinar matahari penuh.
+                  Strawberry membutuhkan setidaknya 6-8 jam sinar matahari
+                  setiap hari.
+                </li>
+                <li>
+                  Persiapkan tanah yang subur dan bebas dari gulma. Pastikan
+                  tanah memiliki drainase yang baik untuk mencegah kelebihan
+                  air.
+                </li>
+                <li>
+                  Buatlah bedengan atau tempat tidur tanam dengan jarak yang
+                  cukup antara tanaman, sekitar 30-45 cm.
+                </li>
+                <li>
+                  Tanam bibit strawberry dengan menyesuaikan kedalaman dan jarak
+                  yang direkomendasikan oleh varietas yang Anda tanam. Pastikan
+                  akar tertutup tanah dengan baik.
+                </li>
+                <li>
+                  Sirami tanaman secara teratur, tetapi hindari genangan air.
+                  Pertahankan kelembaban tanah yang konsisten dengan penyiraman
+                  yang cukup.
+                </li>
+              </ol>
+            </div>
+            <div class="rawat" data-aos="fade-left">
+              <h3>Tata Cara Perawatan</h3>
+              <ol>
+                <li>
+                  Berikan pupuk organik atau pupuk khusus strawberry secara
+                  teratur sesuai dengan petunjuk pada kemasan. Pemberian pupuk
+                  biasanya dilakukan setiap beberapa minggu sekali.
+                </li>
+                <li>
+                  Bersihkan gulma di sekitar tanaman strawberry secara teratur
+                  agar tidak bersaing dengan nutrisi dan air tanaman.
+                </li>
+                <li>
+                  Pertahankan kelembaban tanah dengan penyiraman yang teratur,
+                  terutama saat cuaca panas.
+                </li>
+                <li>
+                  Jaga tanaman dari hama dan penyakit seperti kutu daun dan
+                  jamur. Gunakan pestisida atau metode pengendalian organik yang
+                  sesuai jika diperlukan.
+                </li>
+                <li>
+                  Setelah panen, lakukan pemangkasan daun dan cabang yang tua
+                  atau rusak untuk merangsang pertumbuhan baru.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <h3>Gallery</h3>
+          <div class="image">
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Strawberry1.png"
+              alt="Strawberry 1"
+            />
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Strawberry2.png"
+              alt="Strawberry 2"
+            />
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Strawberry3.png"
+              alt="Strawberry 2"
+            />
+          </div>
+        </div>
+        <div class="funfact">
+          <h3>Fun Fact</h3>
+          <div class="content">
+            <img
+              data-aos="zoom-in"
+              src="asset/Our Plant/Strawberry FF.png"
+              alt="funfact"
+            />
+            <p data-aos="fade-right" data-aos-delay="150">
+              Strawberry Sekolah Vokasi IPB University dikembangkan dalam
+              Greenhouse Teaching Factory sebagai media rekreasi dan sering
+              sekali mendapat kunjunga dari berbagai instansi baik dari luar
+              mauoun dalam negeri contohnya kedatangan tamu dari Israel, Africa,
+              Thailand, hingga menteri sekretaris negara Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Plant End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row1">
+          <div class="content-left">
+            <img src="asset/logo footer.png" alt="Teaching Factory" />
+            <a href="#" class="email">karankteam@gmail.com</a>
+            <p class="phone">+6289627550979</p>
+            <div class="icons">
+              <a href="https://wa.me/6285710207095"
+                ><img src="asset/whatsapp.png" alt="whatsapp"
+              /></a>
+              <a href="https://instagram.com/precision.horticulture/"
+                ><img src="asset/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="content-right">
+            <div class="col1">
+              <h3>Services</h3>
+              <ul>
+                <li>House Plant</li>
+                <li>Garden Plant</li>
+                <li>Vase</li>
+                <li>Fertilizer</li>
+              </ul>
+            </div>
+            <div class="col2">
+              <h3>Information</h3>
+              <ul>
+                <li>Office Hours</li>
+                <li>Requirements</li>
+                <li>About us</li>
+              </ul>
+            </div>
+            <div class="col3">
+              <h3>Helpfull Link</h3>
+              <ul>
+                <li>Service</li>
+                <li>Support</li>
+                <li>Terms & Condition</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="col4">
+              <h3>Address</h3>
+              <div class="address">
+                <p>Jl. Lodaya II, RT.02/RW.05</p>
+                <p>Babakan, Kecamatan Bogor Tengah</p>
+                <p>Kota Bogor, Jawa Barat 16128</p>
+              </div>
+              <a href="https://maps.app.goo.gl/cEKGPUtJpySxAPzR8" class="maps"
+                >Google Maps</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy;Copyright 2023 All Right Reserve | Built by <span>KARANK</span>
+      </p>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

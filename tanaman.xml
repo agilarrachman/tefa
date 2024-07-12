@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <ourplants>
+        <tanaman>
+            <image>Anggrek Prof. Dr. Arif Satria, SP, MSi.png</image>
+            <nama>Anggrek Prof. Dr. Arif Satria, SP, MSi</nama>
+            <namalatin>Dendrobim Prof. Arif Satria</namalatin>
+            <deskripsi>Anggrek Prof. Arif Satria S.P, M.Si  merupakan hasil rekaysa Teaching Factory IPB University berkerjasama dengan Nusantara Agri Persada salah satu dari tiga hasil pemuliaan yang dirakit dalam golongan Dendrobium Section Spatulata/ Antelope Type yang menggambarkan ciri khas anggrek Indonesia di mata Dunia, khususnya anggrek endemik Papua</deskripsi>
+            <button>Anggrek Prof. Dr. Arif Satria, SP, MSi.html</button>
+        </tanaman>
+        <tanaman>
+            <image>Anggrek Wawan Oktariza.png</image>
+            <nama>Anggrek Wawan Oktariza</nama>
+            <namalatin>Dendrobium Dr. Ir. Wawan Oktariza</namalatin>
+            <deskripsi>Anggrek Dr. Ir. Wawan Oktariza merupakan salah satu dari ketiga Anggrek hasil rekayasa hybrid Teaching Factory Sekolah Vokasi IPB University yang dinamai dari wakil dekan Sekolah Vokasi</deskripsi>
+            <button>Anggrek Dr. Ir. Wawan Oktariza, M.SI.html</button>
+        </tanaman>
+        <tanaman>
+            <image>Anggrek Neno Beuty.png</image>
+            <nama>Anggrek Neno Beuty</nama>
+            <namalatin>Dendrobium Neno Beuty</namalatin>
+            <deskripsi>Neno Beuty merupakan salah satu unggulan yang dibudidayakn oleh Teaching Factory Sekolah Vokasi IPB University yang memiliki keindahan dengan kualitas sangat bagus di Greenhouse</deskripsi>
+            <button>Anggrek Neno Beuty.html</button>
+        </tanaman>
+        <tanaman>
+            <image>Anggrek IPB Vocational Collage.png</image>
+            <nama>Anggrek IPB Vocational Collage</nama>
+            <namalatin>Dendrobium IPB Vocational Collage</namalatin>
+            <deskripsi>IPB Vocational Collage merupakan anggrek jeni Dendrobium Section Spatulata yang direkayasa sebagai bentuk identik dari Sekolah Vokasi IPB University</deskripsi>
+            <button>Anggrek IPB Vocational Collage.html</button>
+        </tanaman>
+        <tanaman>
+            <image>Strawberry.png</image>
+            <nama>Strawberry</nama>
+            <namalatin>Fragaria</namalatin>
+            <deskripsi>Strawberry di Greenhouse di kelola dalam Greenhouse sebagai media rekreasi ketika masa pemanenenan dan dikelolal dalam ruangan dengan menggunakan sistem hanging gather</deskripsi>
+            <button>Strawberry.html</button>
+        </tanaman>
+        <tanaman>
+            <image>Golden Melon.png</image>
+            <nama>Golden Melon</nama>
+            <namalatin>Cucumis melo L.</namalatin>
+            <deskripsi>Golden Melon merupakan melon primadona yang dikembangkan di Sekolah Vokasi IPB University, sering kali menjadi sorotan dan banyak menerima kunjungan dari berbagai instansi ketika masa panen</deskripsi>
+            <button>golden_melon.html</button>
+        </tanaman>
+    </ourplants>
