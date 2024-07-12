@@ -30,6 +30,8 @@
     <script src="js/script.js"></script>
      <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" rel="stylesheet">
     <title>Teaching Factory Sekolah Vokasi</title>
 </head>
 <body>
@@ -500,20 +502,20 @@
                 <img src="asset/homepage/contact.png" alt="contact">
             </div>  
             <div class="content-right" data-aos="fade-left" data-aos-delay="250">
-                <form method="post" action="saveData.jsp">
+                <form id="form-contact-me">
                     <div class="input">
                         <div class="nama">                        
-                            <input type="text" placeholder="Username" name="username" id="username">
+                            <input type="text" placeholder="Username" name="username" id="username" required="required">
                         </div>
                     </div>
                     <div class="input">
                         <div class="email">
-                            <input type="email" placeholder="Your Email" name="email" id="email">
+                            <input type="email" placeholder="Your Email" name="email" id="email" required="required">
                         </div>
                     </div>
                     <div class="large-input">
                         <div class="message">
-                            <textarea name="message" placeholder="Your Massage" id="message"></textarea>
+                            <textarea name="message" placeholder="Your Massage" id="message" required="required"></textarea>
                         </div>
                     </div>
                     <div class="button">
@@ -679,6 +681,23 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+    </script>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+    <script>
+        document.getElementById('form-contact-me').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            Swal.fire({
+                icon: "success",
+                title: "Message sent successfully!",
+                iconColor: "#f2507b",
+                showConfirmButton: true,
+                confirmButtonText: "Close",
+                confirmButtonColor: "#f2507b"
+            });
         });
     </script>
 </body>
